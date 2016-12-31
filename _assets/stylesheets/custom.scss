@@ -1,0 +1,156 @@
+/* declare vars */
+$slate: #2c3e50;
+$gold: #ecf0f1;
+$white: #fff;
+
+$headline-font: 'Lora', serif;
+$paragraph-font: 'Raleway', sans-serif;
+
+$a-tags: 'a, a:visited';
+$a-tags-hover: 'a:hover';
+$a-tags-hover-nav: 'a:hover';
+ 
+#{$a-tags} {
+    color: $white;
+    text-decoration: none;
+}
+#{$a-tags-hover} {
+    color: $white;
+    text-decoration: none;
+    border-bottom: 0px $white dotted;
+}
+
+#{$a-tags-hover-nav} {
+
+}
+
+/* global */
+
+h1{
+  font-family: $headline-font;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h2{
+  font-family: $headline-font;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h3{
+  font-family: $headline-font;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+h4{
+  font-family: $headline-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+p{
+  font-family: $paragraph-font;
+  font-size: 14px;
+}
+
+body{
+  font-family: $paragraph-font;
+  font-size: 14px;
+}
+
+
+.nav{
+  margin-top: 0px;
+
+}
+
+.navbar-default{
+  color: $slate;
+  background-color: $gold;
+ 
+  font-family: $paragraph-font;
+  font-size: 14px;
+  font-style: normal;
+
+  padding-top: 0px;
+  border-top: 0px solid #e5e5e5;
+  border-bottom: 0px solid $slate;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+    color: $white;
+    text-decoration: none;
+    background-color: $slate;
+}
+
+#contentHolder{
+  padding: 10px;
+}
+
+/* Space out content a bit */
+body {
+  padding-bottom: 20px;
+}
+
+/* jumbotron */
+.jumbotron {
+  color: $white;
+  background-color: $slate;
+
+
+  margin-bottom: 0px;
+  /*text-align: center;*/
+  border-bottom: 0px solid #e5e5e5;
+
+  .title{
+
+    #{$a-tags} {
+
+    }
+
+    #{$a-tags-hover} {
+      border-bottom: 1px $white dotted;
+
+    }
+
+  }
+
+  #name.title {
+    font-size: 50px;
+  }
+
+  p.lead{
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: $screen-sm-min) {
+  
+
+}
+
+.navbar-inner{
+  -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+}
